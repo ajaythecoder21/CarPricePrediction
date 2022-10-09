@@ -5,13 +5,15 @@ This project is designed to predict the price of a car given certain attributes/
 
 
 ## Installation
-=> Need to pip install beautifulsoup
-=> need to pip install requests
-=> need to install selenium
-=> need to install Chrome Selenium Webdriver and add to executable path
+- Need to pip install beautifulsoup
+- need to pip install requests
+- need to install selenium
+- need to install Chrome Selenium Webdriver and add to executable path
 
 
 ## Steps to Run Project
+- Add the Car_Data.json file to an AWS S3 Bucket
+- Apply Necessary IAM Role Permissions to AWS Sagemaker
 - Run the AWS Sagemaker Notebook called Car_Sagemaker_Model.ipynb on AWS Sagemaker with the conda_tensorflow2_p38 kernel
 - Go to AWS API Lambda and add the lambda_handler.py code and Deploy the code
 - Go to AWS API Gateway and Create the Necessary Resource and Methods
